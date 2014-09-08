@@ -25,7 +25,7 @@ def main():
     print wp.call(GetUserInfo())
     print 'wordpress connected'
 
-    for key,values in items[:3]:
+    for key,values in items:
         post = WordPressPost()
         post.title = values['resolved_title']
         post.link = values['given_url']
